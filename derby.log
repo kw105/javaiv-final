@@ -1,0 +1,20 @@
+Wed Nov 25 12:30:17 PST 2020 : Apache Derby Network Server - 10.14.2.0 - (1828579) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Wed Nov 25 12:30:29 PST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0176-0119-819a-ffffacf6f7f9 
+on database directory /Users/kevin/Final-Adv-Java-Assignment-Kevin-Wang/COREJAVA with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4b85612c 
+Loaded from file:/Users/kevin/Final-Adv-Java-Assignment-Kevin-Wang/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=11.0.8+10-LTS
+user.dir=/Users/kevin/Final-Adv-Java-Assignment-Kevin-Wang
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.16
+derby.system.home=/Users/kevin/Final-Adv-Java-Assignment-Kevin-Wang
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Nov 25 12:30:49 PST 2020: Shutting down Derby engine
+----------------------------------------------------------------
+Wed Nov 25 12:30:49 PST 2020:
+Shutting down instance a816c00e-0176-0119-819a-ffffacf6f7f9 on database directory /Users/kevin/Final-Adv-Java-Assignment-Kevin-Wang/COREJAVA with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4b85612c 
+----------------------------------------------------------------

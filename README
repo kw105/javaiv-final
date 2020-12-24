@@ -1,0 +1,50 @@
+Please find the Java project files for this final assignment at:
+
+https://repl.it/@kw6/Final-Adv-Java-Assignment-Kevin-Wang
+
+Option #1 (use Java Modules) is chosen to complete this assignment.
+
+The Java Module to implement the final application is in:
+
+com.adv.java.concluding.application
+
+The following three modules are implemented to complete the required portiion of this assignment:
+
+com.adv.java.iostream
+com.adv.java.xml
+com.adv.java.regex
+
+In addition, the following modules are implemented for the extra bonus points:
+
+com.adv.java.streams
+com.adv.java.concurrency
+com.adv.java.scripting
+com.adv.java.database
+
+The following steps may be followed to run this project:
+
+Step 1. Compile modules
+
+javac com.adv.java.iostream/module-info.java com.adv.java.iostream/com/adv/java/iostream/Lesson1IOStream.java
+javac com.adv.java.xml/module-info.java com.adv.java.xml/com/adv/java/xml/Lesson4XML.java
+javac com.adv.java.regex/module-info.java com.adv.java.regex/com/adv/java/regex/Lesson2RegEx.java
+javac com.adv.java.streams/module-info.java com.adv.java.streams/com/adv/java/streams/Lesson3Streams.java
+javac com.adv.java.concurrency/module-info.java com.adv.java.concurrency/com/adv/java/concurrency/Lesson5Concurrent.java
+javac com.adv.java.scripting/module-info.java com.adv.java.scripting/com/adv/java/scripting/Lesson9ScriptingDemo.java
+javac com.adv.java.database/module-info.java com.adv.java.database/com/adv/java/database/Lesson7Database.java
+
+Step 2. Compile the application module
+
+javac --module-path com.adv.java.iostream:com.adv.java.xml:com.adv.java.regex:com.adv.java.streams:com.adv.java.concurrency:com.adv.java.scripting:com.adv.java.database  com.adv.java.concluding.application/module-info.java com.adv.java.concluding.application/com/adv/java/concluding/application/FinalApp.java
+
+Step 3. Start the derby database server (for demonstrating the com.adv.java.database module)
+
+java -jar lib/derbyrun.jar server start &
+
+Step 4. Run the application module
+
+java -classpath lib/derbyclient.jar:. --module-path com.adv.java.concluding.application:com.adv.java.iostream:com.adv.java.xml:com.adv.java.regex:com.adv.java.streams:com.adv.java.concurrency:com.adv.java.scripting:com.adv.java.database --module com.adv.java.concluding.application/com.adv.java.concluding.application.FinalApp
+
+Step 5. Shut down the derby database server
+
+java -jar lib/derbyrun.jar server shutdown
